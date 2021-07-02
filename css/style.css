@@ -76,6 +76,8 @@ img{
 	}
 	main .profile-content img{
 		border-radius: 50%;
+		border: 3px solid grey;
+		padding: 2px;
 	}
 	main .profile-info{
 		padding-left: 0px;
@@ -222,10 +224,10 @@ img{
 		margin-bottom: 20px;
 		padding: 3px;
 		cursor: pointer;
-		width: 12vw;
+		width: 20vw;
 		border-radius: 50%;
 		max-width: 40vw;
-		
+		border: 3px solid grey;
 		
 	}	
 	main .profile-info{
@@ -372,6 +374,8 @@ img{
 	}
 	main .profile-photo img{
 		border-radius: 50%;
+		border: 3px solid grey;
+		padding: 2px;
 	}
 	main .profile-content{
 		display: flex;
