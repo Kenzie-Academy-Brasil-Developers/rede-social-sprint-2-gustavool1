@@ -47,10 +47,12 @@ main{
 }
 a:link{
 	text-decoration: none;
+	
 }
 a:visited{
-	color: black;
+	color: blue;
 }
+
 
 	main .profile-content{
 
@@ -105,16 +107,97 @@ img{
 	}
 
 	/*Stories*/
+	main .highlighted-stories ul li{
+		padding-right:10px ;
+		color: gray;
+	}
+	main .highlighted-stories ul li:hover{
+		padding-right:10px ;
+		color: black;
+	}
 	main .highlighted-stories ul{
 		display: flex;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		
+		text-align: center;
+		
 	}
 	main .highlighted-stories ul img{
-		max-width: 100px;
+		max-width: 77px;
+		border-radius: 50%;
+		border: 3px solid rgb(189, 186, 186);
+		
+		
 	}
 
 	/*Posts*/
+
+	main .profile-posts nav{
+		display: flex;
+		border-top: 1px solid rgb(161, 154, 154);
+		justify-content: space-evenly;
+		margin-bottom: 20px;
+		
+	}
+	main .profile-posts nav a{
+		color: rgb(161, 154, 154)
+	}
+	main .profile-posts nav a:hover{
+		color: black;
+		border-top: 2px solid black
+	}
+	main .profile-posts ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	main .profile-posts ul li img{
+		max-width: 170px;
+		padding-right: 10px;
+	}
+
+	/*FOOTER */
+	footer {
+		margin-top: 30px;
+		padding-top: 20px;
+		border-top: 1.5px solid #c2b3b3;
+		
+	}
+	footer .nav-footer{
+		margin-top: 5px;
+		display: flex;
+		
+	}
+	footer .footer-nav a {
+		
+		text-align: center;
+		padding: 5px;
+		color: rgb(138, 138, 138);
+		
+	}
+	footer .footer-nav a:hover{
+		color: black;
+	}
+	.copyright{
+		padding-top: 20px;
+		text-align: center;
+		color: grey;
+	}
+	.copyright:hover{
+		color: black;
+	}
+	
 	
 }
+
+
+
+
+
+
+
+
 @media screen and (min-width:576px) and (max-width: 767px){
 	
 	header figure{
@@ -282,7 +365,7 @@ img{
 }
 
 
-@media screen and (min-width:768px) and (max-width:991px){
+@media screen and (min-width:768px) and (max-width:1023px){
 	main{
 		
 		width: 100vw;
@@ -404,7 +487,7 @@ img{
 }
 
 
-@media screen and  (min-width:992px){
+@media screen and  (min-width:1024px){
 	header{
 		padding: 10px;
 		display: flex;
