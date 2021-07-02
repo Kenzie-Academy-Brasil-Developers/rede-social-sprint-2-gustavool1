@@ -19,6 +19,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	box-sizing: border-box;
 }
 :root{
 	--fontWeightProfile:500;
@@ -27,7 +28,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 /*BODY*/
 body{
 	font-family: Helvetica, Arial, sans-serif;
-	height: 2000px;
+	
 }
 
 /*TOPO*/
@@ -97,6 +98,7 @@ img{
 		align-self: center;
 	}
 	main .profile-photo img{
+		padding: 3px;
 		cursor: pointer;
 		width: 12vw;
 		border-radius: 50%;
@@ -165,6 +167,7 @@ img{
 		color: rgba(0, 0, 0, 0.671);
 	}
 	main .highlighted-stories img{
+		padding: 2px;
 		cursor: pointer;
 		max-width: 77px;
 		font-weight: var(--fontWeightProfile);
@@ -185,7 +188,7 @@ img{
 		width: 50%;
 		height: 50px;
 		justify-content: space-around ;
-		align-items: ;
+		border-top: 1.5px solid #c2b3b3;
 		font-size: 20px;
 		
 		
@@ -193,6 +196,7 @@ img{
 	main .profile-posts nav a {
 		color: rgba(0, 0, 0, 0.274);
 		height: 50px;
+		padding-top: 10px;
 	}
 	main .profile-posts nav a:hover{
 		border-top: 1px solid rgb(105, 100, 100);
@@ -203,7 +207,6 @@ img{
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		
 		width: 100%;
 		justify-content:center ;
 	}
@@ -248,5 +251,177 @@ img{
 	footer .footer-nav a:hover, .copyright:hover{
 		color: rgb(41, 40, 40)
 	}
+}
+
+
+
+
+
+@media screen and (min-width:576px) and (max-width: 767px){
+	body{
+		height: 2000px;
+	}
+	header figure{
+		display: none;
+	}
+	
+	main .profile-content{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	main .profile-photo{
+		display: flex;
+		
+		height: 80px;
+		
+		
+		
+	}
+	main .profile-photo img{
+		margin-top: 10%;
+		margin-bottom: 20px;
+		padding: 3px;
+		cursor: pointer;
+		width: 12vw;
+		border-radius: 50%;
+		max-width: 40vw;
+		
+		
+	}	
+	main .profile-info{
+		
+	}
+	main .profile-info h1{
+		display: flex;
+		position: relative;
+		bottom: 5px;
+		left: 0;
+		padding: 10px;
+	}
+	main .profile-info h2{
+
+	}
+	main .profile-info ul li p {
+		padding-top: 5px;
+		margin-bottom: 20px;
+		
+		width: 70%;
+	}
+	main .profile-data{
+		display: flex;
+		justify-content: center;
+	}
+	main .profile-data p {
+		width: 150px;
+		margin-bottom: 10px;
+	}
+	main .profile-data p span{
+		display: block;
+		font-weight: bold;
+	}
+	
+
+
+	/*STORIES*/
+
+
+	main .highlighted-stories {
+		margin-top: 30px;
+		display: flex;
+		border-top: 1px solid #c2b3b3;
+		padding: 5px;
+		
+	}
+	main .highlighted-stories ul{
+		display: flex;
+		text-align: center;
+		align-items: center;
+		
+	}
+	main .highlighted-stories ul li{
+		padding-right: 20px;
+		color: darkgrey;
+	}
+	main .highlighted-stories ul li:hover{
+		color: black;
+	}
+	main .highlighted-stories img {
+		
+		max-width: 77px;
+		width: 77px;
+		border: 3px solid rgb(189, 186, 186);
+		border-radius: 50%;
+	}
+	/*NAV*/
+	main .profile-posts nav{
+		margin-top: 20px;
+		border-top: 1.5px solid #c2b3b3;
+		display: flex;
+		justify-content: space-around;
+		
+		
+	}
+	main .profile-posts nav a {
+		padding: 10px;
+		color:  darkgrey;;
+		
+	}
+	main .profile-posts nav a:hover{
+		border-top: 2px solid rgba(0, 0, 0, 0.274) ;
+		color: black;
+	
+	}
+
+
+
+	/*POSTS*/
+	
+	main article .profile-posts {
+		display: flex;
+		width: 100vw;
+	}
+	main .profile-posts ul {
+		display: flex;
+		flex-wrap: wrap;
+		
+		justify-content: center;
+		
+		
+	}
+
+	main .profile-posts ul li img{
+		
+		max-width: 170px;
+		max-height: 170px;
+		padding: 9px;
+		height: 100%;
+		
+	}
+
+	/*FOOTER*/
+	footer {
+		margin-top: 30px;
+		padding-top: 20px;
+		border-top: 1.5px solid #c2b3b3;
+		
+	}
+	footer .nav-footer{
+		margin-top: 5px;
+		display: flex;
+		
+	}
+	footer .footer-nav a {
+		
+		text-align: center;
+		padding: 20px;
+		color: rgb(138, 138, 138);
+		
+	}
+	.copyright{
+		padding-top: 20px;
+		text-align: center;
+	}
+	
 }
 
